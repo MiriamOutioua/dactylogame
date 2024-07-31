@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.project.GameModeController">
+   <children>
+      <Button fx:id="normalMode" layoutX="200.0" layoutY="262.0" mnemonicParsing="false" onAction="#switchToNormalMode" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #4169E1; -fx-font-size: 18px; -fx-padding: 10 20 10 20; -fx-border-radius: 5; -fx-font-weight: bold; -fx-text-fill: white;" text="Normal" />
+      <Button fx:id="gameMode" layoutX="650.0" layoutY="262.0" mnemonicParsing="false" onAction="#switchToGameMode" style="-fx-background-color: #4169E1; -fx-font-size: 18px; -fx-padding: 10 20 10 20; -fx-border-radius: 5; -fx-font-weight: bold; -fx-text-fill: white;" text="Jeu" />
+      <Button fx:id="easyBtn" layoutX="103.0" layoutY="262.0" mnemonicParsing="false" onAction="#easyGameMode" style="-fx-background-color: #4169E1; -fx-font-size: 18px; -fx-padding: 10 20 10 20; -fx-border-radius: 5; -fx-font-weight: bold; -fx-text-fill: white;" text="Facile" visible="false" />
+      <Button fx:id="normalBtn" layoutX="400.0" layoutY="262.0" mnemonicParsing="false" onAction="#normalGameMode" style="-fx-background-color: #4169E1; -fx-font-size: 18px; -fx-padding: 10 20 10 20; -fx-border-radius: 5; -fx-font-weight: bold; -fx-text-fill: white;" text="Intermédiaire" visible="false" />
+      <Button fx:id="hardBtn" layoutX="720.0" layoutY="262.0" mnemonicParsing="false" onAction="#hardGameMode" style="-fx-background-color: #4169E1; -fx-font-size: 18px; -fx-padding: 10 20 10 20; -fx-border-radius: 5; -fx-font-weight: bold; -fx-text-fill: white;" text="Difficile" visible="false" />
+      <Label layoutX="344.0" layoutY="66.0" text="DACTYLOGAME">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

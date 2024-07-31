@@ -1,0 +1,4 @@
+.red { -fx-fill: rgb(252, 55, 55); -fx-font-size: 15pt;}
+.grey { -fx-fill: rgb(148, 146, 146); -fx-font-size: 15pt ;}
+.green { -fx-fill: rgb(123, 228, 114); -fx-font-size: 15pt ;}
+.blue { -fx-fill: rgb(46, 142, 231); -fx-font-size: 15pt ;}
