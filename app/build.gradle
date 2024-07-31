@@ -8,6 +8,12 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+javafx {
+    version = "22.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 repositories {
@@ -23,6 +29,9 @@ dependencies {
 
     // This dependency is used by the application.
     implementation libs.guava
+
+    implementation group: 'org.fxmisc.richtext', name: 'richtextfx', version: '0.11.0'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -34,7 +43,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'org.example.App'
+    mainClass = 'org.project.App'
 }
 
 tasks.named('test') {
